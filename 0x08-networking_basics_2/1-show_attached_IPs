@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# A Bash script that displays all active IPv4 IPs on the machine it’s executed on.
+ifconfig | awk 'NR==2 {print $2}'
+ifconfig | awk 'NR==11 {print $2}'
